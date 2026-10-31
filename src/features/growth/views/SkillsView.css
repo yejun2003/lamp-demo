@@ -1,0 +1,45 @@
+.gx-skills {
+  display: grid;
+  gap: 18px;
+}
+.gx-radar {
+  text-align: center;
+  padding: 24px;
+}
+.gx-radar > p {
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+.gx-radar svg {
+  max-width: 400px;
+  max-height: 350px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.gx-skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+.gx-skill-card {
+  text-align: left;
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+.gx-skill-card .gx-card-top > span {
+  font-size: 12px;
+  color: var(--space-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.gx-skill-card .gx-muted {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.gx-skill-card > small {
+  font-size: 10px;
+  color: #a5b7c3;
+}

@@ -1,0 +1,70 @@
+.gx-goal-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.gx-goal-board > section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #354154;
+  padding-bottom: 12px;
+}
+.gx-goal-board > section > header span {
+  padding: 1px 8px;
+  background: #243144;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.gx-goal-board > section > p {
+  font-size: 11px;
+  margin: 10px 0 17px;
+}
+.gx-goal-card {
+  padding: 18px;
+  margin-bottom: 14px;
+}
+.gx-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.gx-goal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--space-color);
+  box-shadow: 0 0 12px #e6ba8344;
+}
+.gx-goal-card h3 {
+  margin: 12px 0;
+}
+.gx-goal-card > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #9facbf;
+  white-space: pre-line;
+}
+.gx-goal-card .gx-progress {
+  margin-top: 22px;
+}
+.gx-goal-card .gx-progress-label {
+  margin: 9px 0;
+  font-size: 10px;
+}
+.gx-goal-card > small {
+  display: block;
+  border-top: 1px solid #29384a;
+  padding-top: 13px;
+  margin-top: 12px;
+  color: #a0adc0;
+  font-size: 11px;
+}
+.gx-goal-card > .gx-text-button {
+  margin-top: 15px;
+  color: var(--space-color) !important;
+}
+.gx-goal-card .gx-complete {
+  color: #cdddb5;
+}

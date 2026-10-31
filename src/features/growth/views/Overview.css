@@ -1,0 +1,199 @@
+.gx-overview-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 285px;
+  gap: 22px;
+}
+.gx-explorer {
+  overflow: clip;
+  min-width: 0;
+  position: relative;
+}
+.gx-overview-heading {
+  position: relative;
+  z-index: 2;
+  padding: 5px 12px 0;
+  pointer-events: none;
+}
+.gx-overview-heading h1 {
+  font-size: clamp(34px, 3.2vw, 52px);
+  line-height: 1.27;
+  letter-spacing: 1px;
+  color: #f6e1b8;
+}
+.gx-overview-heading p {
+  font-family: 'Songti SC', serif;
+  letter-spacing: 1px;
+  color: #aeb8c9;
+  font-size: 15px;
+  margin-top: 14px;
+}
+.gx-overview-bottom {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 18px;
+  margin-top: 23px;
+}
+.gx-recent,
+.gx-current-goal {
+  min-width: 0;
+  padding: 18px 22px;
+}
+.gx-recent > .gx-section-label,
+.gx-current-goal > .gx-section-label {
+  border-bottom: 1px solid #263242;
+  padding-bottom: 15px;
+}
+.gx-recent-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 0;
+  background: none;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #182432;
+}
+.gx-recent-row:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+.gx-recent-row .story-art {
+  width: 78px;
+  height: 56px;
+}
+.gx-recent-row > time {
+  color: #9ea8b9;
+  font-size: 12px;
+}
+.gx-recent-row > span:not(.story-art) {
+  min-width: 0;
+  flex: 1;
+}
+.gx-recent-row strong {
+  display: block;
+  font-family: 'Songti SC', serif;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gx-recent-row small {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #8591a6;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.gx-recent-row > svg {
+  color: #79869a;
+  flex-shrink: 0;
+}
+.gx-featured-goal {
+  display: flex;
+  width: 100%;
+  gap: 18px;
+  background: transparent;
+  padding: 24px 0 0;
+  text-align: left;
+}
+.gx-featured-goal .story-art {
+  width: 72px;
+  height: 96px;
+}
+.gx-featured-goal > span:last-child {
+  flex: 1;
+  min-width: 0;
+}
+.gx-featured-goal strong {
+  font-family: 'Songti SC', serif;
+  font-size: 17px;
+  display: block;
+  margin: 3px 0 8px;
+}
+.gx-featured-goal small {
+  color: #8e9baf;
+  font-size: 12px;
+  display: block;
+  line-height: 1.8;
+}
+.gx-featured-goal .gx-progress {
+  margin: 17px 0 9px;
+}
+.gx-goal-footnote {
+  font:
+    12px 'Songti SC',
+    serif;
+  letter-spacing: 1px;
+  color: #66758d;
+  margin: 30px 0 5px;
+}
+@media (max-width: 1100px) {
+  .gx-overview-top {
+    grid-template-columns: minmax(0, 1fr) 248px;
+    gap: 14px;
+  }
+  .gx-overview-bottom {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .gx-overview-heading h1 {
+    font-size: 36px;
+  }
+  .gx-overview-heading p {
+    font-size: 13px;
+  }
+  .gx-recent-row .story-art {
+    width: 70px;
+    height: 53px;
+  }
+}
+@media (max-width: 800px) {
+  .gx-overview-top {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .gx-overview-heading {
+    padding: 0 3px;
+  }
+  .gx-overview-heading h1 {
+    font-size: 36px;
+  }
+  .gx-overview-heading p {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .gx-overview-bottom {
+    margin-top: 18px;
+  }
+  .gx-recent,
+  .gx-current-goal {
+    padding: 18px;
+  }
+  .gx-recent-row {
+    gap: 10px;
+  }
+  .gx-recent-row > time {
+    display: none;
+  }
+  .gx-recent-row strong {
+    font-size: 14px;
+  }
+  .gx-recent-row small {
+    font-size: 11px;
+  }
+  .gx-recent-row .story-art {
+    width: 60px;
+    height: 52px;
+  }
+  .gx-featured-goal strong {
+    font-size: 15px;
+  }
+  .gx-featured-goal .story-art {
+    width: 65px;
+    height: 90px;
+  }
+  .gx-section-label > .gx-text-button {
+    font-size: 10px !important;
+  }
+}

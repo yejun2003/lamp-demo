@@ -1,0 +1,61 @@
+.gx-memories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.gx-memory {
+  text-align: left;
+  padding: 0;
+  overflow: hidden;
+}
+.gx-memory:hover {
+  border-color: #725966;
+}
+.gx-memory-photo {
+  display: block;
+  position: relative;
+}
+.gx-memory-photo > .story-art {
+  width: 100%;
+  aspect-ratio: 1.5;
+  border-radius: 0;
+}
+.gx-memory-photo > time {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  background: #0007;
+  backdrop-filter: blur(8px);
+  border-radius: 5px;
+  padding: 4px 9px;
+  font-size: 10px;
+}
+.gx-memory-photo > svg {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  filter: drop-shadow(0 1px 3px black);
+}
+.gx-memory-body {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+}
+.gx-memory-body > strong {
+  font:
+    600 23px/1.5 'Songti SC',
+    serif;
+}
+.gx-memory-body > span:not(.gx-tags) {
+  font-size: 13px;
+  color: #acb6c6;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+.gx-memory-body > small {
+  font-size: 11px;
+  color: #c59c9f;
+  border-top: 1px solid #344052;
+  padding-top: 14px;
+  margin-top: 4px;
+}

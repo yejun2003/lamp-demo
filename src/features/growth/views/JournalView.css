@@ -1,0 +1,94 @@
+.gx-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.gx-timeline-item {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 22px;
+  position: relative;
+}
+.gx-timeline-item:before {
+  content: '';
+  position: absolute;
+  left: 95px;
+  top: 0;
+  bottom: -18px;
+  width: 1px;
+  background: #3b485c;
+}
+.gx-timeline-item:last-child:before {
+  bottom: 20px;
+}
+.gx-timeline-item:after {
+  content: '';
+  position: absolute;
+  left: 91px;
+  top: 27px;
+  width: 9px;
+  height: 9px;
+  background: #728098;
+  border-radius: 50%;
+}
+.gx-timeline-item:first-child:after {
+  background: #efc789;
+  box-shadow: 0 0 15px #efc78966;
+}
+.gx-timeline-item > time {
+  font-size: 14px;
+  padding-top: 18px;
+  white-space: nowrap;
+}
+.gx-timeline-item > time small {
+  display: block;
+  font-size: 11px;
+  color: #8f9fb6;
+  margin-top: 5px;
+}
+.gx-journal-card {
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  min-width: 0;
+  width: 100%;
+}
+.gx-journal-card:hover {
+  border-color: #5c6c81;
+  background: #111d2d;
+}
+.gx-journal-card > .story-art {
+  width: 142px;
+  min-height: 132px;
+  align-self: stretch;
+  aspect-ratio: 1;
+}
+.gx-journal-copy {
+  display: grid;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+.gx-journal-copy > strong {
+  font-family: 'Songti SC', serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.gx-entry-excerpt {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #a9b5c7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: pre-line;
+}
+.gx-journal-card > svg {
+  flex-shrink: 0;
+  color: #a9b5c6;
+  margin-top: 4px;
+}

@@ -1,0 +1,135 @@
+.gx-today {
+  padding: 23px 22px;
+  align-self: stretch;
+}
+.gx-today > h2 {
+  margin-bottom: 4px;
+}
+.gx-today > .gx-muted {
+  font-size: 12px;
+}
+.gx-today-section {
+  border-top: 1px solid #34404f;
+  margin-top: 24px;
+  padding-top: 22px;
+}
+.gx-today-section h3 {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+.gx-moods {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.gx-moods button {
+  padding: 0;
+  background: transparent;
+  color: #8994a5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 11px;
+}
+.gx-moods svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+}
+.gx-moods button.selected {
+  color: #f3d295;
+}
+.gx-moods button.selected svg {
+  filter: drop-shadow(0 0 5px #efc78955);
+}
+.gx-today-section .gx-section-label {
+  align-items: baseline;
+  color: #929caf;
+  font-size: 12px;
+}
+.gx-today-habits > button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: none;
+  width: 100%;
+  padding: 14px 0;
+  text-align: left;
+  font-size: 13px;
+  border-bottom: 1px solid #202b3b;
+}
+.gx-today-habits > button:last-child {
+  border-bottom: 0;
+}
+.gx-check {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #8e9aaa;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.gx-today-habits > button[aria-pressed='true'] .gx-check {
+  background: #e7bf83;
+  color: #171e28;
+  border-color: #e7bf83;
+}
+.gx-today-habits > button[aria-pressed='true'] > span:last-child {
+  color: #a6c2b6;
+}
+.gx-today-quote {
+  font-family: 'Songti SC', serif;
+  color: #a9adba;
+  font-size: 13px;
+  margin-top: 24px;
+  line-height: 1.9;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.gx-today-quote > span {
+  font-size: 25px;
+  color: #d6b880;
+}
+@media (max-width: 1050px) and (min-width: 801px) {
+  .gx-today {
+    padding: 20px 16px;
+  }
+  .gx-moods {
+    gap: 5px;
+  }
+  .gx-moods svg {
+    width: 29px;
+    height: 29px;
+  }
+  .gx-moods button {
+    font-size: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .gx-today {
+    padding: 22px;
+  }
+  .gx-moods {
+    justify-content: flex-start;
+    gap: clamp(10px, 4vw, 24px);
+  }
+  .gx-today-section {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .gx-moods svg {
+    width: 36px;
+    height: 36px;
+  }
+  .gx-today-quote br {
+    display: none;
+  }
+  .gx-today-quote {
+    margin-top: 20px;
+  }
+}

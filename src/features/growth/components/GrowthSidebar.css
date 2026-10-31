@@ -1,0 +1,132 @@
+.gx-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 220px;
+  background: #070d16f5;
+  border-right: 1px solid #574a356b;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 12px 20px;
+}
+.gx-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--gx-gold) !important;
+  background: transparent;
+  padding: 0 13px 32px;
+  text-align: left;
+  white-space: nowrap;
+}
+.gx-brand > span {
+  font:
+    42px Georgia,
+    serif;
+  letter-spacing: -1px;
+}
+.gx-brand b {
+  font-size: 14px;
+}
+.gx-brand small {
+  font:
+    21px 'Songti SC',
+    serif;
+}
+.gx-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gx-sidebar nav button {
+  height: 51px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 19px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: #aeb6c5;
+  font-size: 15px;
+}
+.gx-sidebar nav button:hover {
+  background: #ffffff06;
+  color: #fff;
+}
+.gx-sidebar nav button.active {
+  background: linear-gradient(90deg, #e7bf8314, #e7bf8328);
+  color: #f0d7aa;
+  border-color: #aa87502b;
+  box-shadow: inset -2px 0 #efc789;
+}
+.gx-sidebar-bottom {
+  margin-top: auto;
+  padding: 20px 12px 0;
+}
+.gx-sidebar-bottom p {
+  font:
+    13px 'Songti SC',
+    serif;
+  letter-spacing: 1px;
+  color: #7f8a99;
+  margin-bottom: 28px;
+}
+.gx-sidebar-bottom button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 14px 0;
+  background: transparent;
+  color: #94a0b1;
+  font-size: 12px;
+  text-align: left;
+}
+.gx-sidebar-bottom button:first-of-type {
+  border-top: 1px solid #374052;
+}
+.gx-sidebar-bottom button:hover {
+  color: var(--gx-gold);
+}
+.gx-nav-scrim {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .gx-sidebar {
+    width: 188px;
+  }
+  .gx-brand {
+    gap: 7px;
+    padding-left: 6px;
+  }
+  .gx-brand > span {
+    font-size: 36px;
+  }
+  .gx-brand small {
+    font-size: 18px;
+  }
+  .gx-sidebar nav button {
+    gap: 12px;
+    padding: 0 13px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .gx-sidebar {
+    width: 230px;
+    transform: translateX(-100%);
+    transition: transform 0.25s;
+  }
+  .gx-sidebar.is-open {
+    transform: translateX(0);
+  }
+  .gx-nav-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0009;
+    z-index: 19;
+    backdrop-filter: blur(3px);
+  }
+}

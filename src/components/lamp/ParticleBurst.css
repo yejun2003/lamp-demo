@@ -1,0 +1,46 @@
+.particle-burst {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  z-index: 3;
+}
+.particle-burst i {
+  position: absolute;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  background: var(--light-color);
+  border-radius: 50%;
+  box-shadow: 0 0 9px var(--light-color);
+  animation: particle-drift 1.5s ease-out var(--delay) both;
+}
+.particle-burst i:nth-child(3n) {
+  border-radius: 1px;
+  clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+  width: 13px;
+  height: 13px;
+}
+@keyframes particle-drift {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.3);
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0.15);
+  }
+}
+@media (max-width: 760px) {
+  .particle-burst {
+    transform: scale(0.7);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .particle-burst {
+    display: none;
+  }
+}

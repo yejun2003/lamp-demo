@@ -1,0 +1,299 @@
+@media (min-width: 1650px) {
+  .gx-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gx-skill-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1250px) {
+  .gx-space-layout {
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 18px;
+  }
+  .gx-hero-planet {
+    right: -25px;
+    width: 300px;
+    height: 300px;
+    top: -10px;
+  }
+  .gx-journal-card {
+    gap: 14px;
+    padding: 17px;
+  }
+  .gx-journal-card > .story-art {
+    width: 105px;
+  }
+  .gx-timeline-item {
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 18px;
+  }
+  .gx-timeline-item:before {
+    left: 77px;
+  }
+  .gx-timeline-item:after {
+    left: 73px;
+  }
+  .gx-goal-board {
+    grid-template-columns: 1fr;
+  }
+  .gx-goal-board > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .gx-goal-board > section > header,
+  .gx-goal-board > section > p {
+    grid-column: 1/-1;
+    margin: 0;
+  }
+  .gx-goal-card {
+    margin: 0;
+  }
+  .gx-prompt,
+  .gx-calendar,
+  .gx-space-note {
+    padding: 18px;
+  }
+  .gx-space-hero h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 1050px) {
+  .gx-space-layout {
+    grid-template-columns: 1fr;
+  }
+  .gx-space-aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gx-space-hero p {
+    max-width: 75%;
+    font-size: 19px;
+  }
+  .gx-space-stats {
+    gap: 14px;
+    font-size: 11px;
+  }
+  .gx-space-stats > span + span {
+    padding-left: 14px;
+  }
+  .gx-space-stats > span:last-child {
+    display: none;
+  }
+  .gx-goal-board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .gx-goal-board > section {
+    display: block;
+  }
+  .gx-goal-board > section > p {
+    margin: 12px 0;
+  }
+  .gx-goal-card {
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .gx-space-hero {
+    min-height: 210px;
+    margin-top: -12px;
+    padding: 12px 0 22px;
+  }
+  .gx-space-hero h1 {
+    font-size: 43px;
+  }
+  .gx-hero-planet {
+    width: 250px;
+    height: 250px;
+    right: -38px;
+    top: -5px;
+    opacity: 0.65;
+  }
+  .gx-space-hero p {
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+  .gx-space-stats {
+    font-size: 10px;
+  }
+  .gx-space-stats svg {
+    width: 18px;
+  }
+  .gx-space-stats strong {
+    font-size: 17px;
+  }
+  .gx-space-stats > span {
+    gap: 6px;
+  }
+  .gx-space-aside {
+    gap: 14px;
+  }
+  .gx-search input {
+    font-size: 12px;
+  }
+  .gx-goal-board {
+    gap: 10px;
+  }
+  .gx-goal-card {
+    padding: 15px;
+  }
+  .gx-timeline-item {
+    grid-template-columns: 65px minmax(0, 1fr);
+    gap: 15px;
+  }
+  .gx-timeline-item:before {
+    left: 69px;
+  }
+  .gx-timeline-item:after {
+    left: 65px;
+  }
+  .gx-timeline-item > time {
+    font-size: 12px;
+  }
+  .gx-journal-copy > strong {
+    font-size: 19px;
+  }
+  .gx-journal-card > .story-art {
+    width: 115px;
+  }
+  .gx-journal-card > svg {
+    display: none;
+  }
+  .gx-space-stats > span + span {
+    padding-left: 10px;
+  }
+  .gx-week {
+    padding: 18px;
+  }
+  .gx-week .gx-section-label {
+    align-items: flex-start;
+  }
+  .gx-week .gx-section-label h3 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 560px) {
+  .gx-hero-planet {
+    right: -72px;
+    top: 0;
+    width: 230px;
+    height: 230px;
+    opacity: 0.55;
+  }
+  .gx-space-hero h1 {
+    font-size: 39px;
+  }
+  .gx-space-hero p {
+    font-size: 16px;
+    max-width: 68%;
+    line-height: 1.8;
+  }
+  .gx-space-stats {
+    gap: 10px;
+  }
+  .gx-timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-left: 18px;
+  }
+  .gx-timeline-item:before {
+    left: 3px;
+    top: 12px;
+  }
+  .gx-timeline-item:after {
+    left: 0;
+    top: 24px;
+    width: 7px;
+    height: 7px;
+  }
+  .gx-timeline-item > time {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 14px;
+  }
+  .gx-timeline-item > time small {
+    margin: 0;
+  }
+  .gx-journal-card {
+    flex-direction: column;
+    padding: 14px;
+    gap: 14px;
+  }
+  .gx-journal-card > .story-art {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 2.3;
+  }
+  .gx-journal-copy {
+    gap: 10px;
+  }
+  .gx-journal-copy > strong {
+    font-size: 20px;
+  }
+  .gx-entry-excerpt {
+    font-size: 12px;
+  }
+  .gx-space-aside {
+    grid-template-columns: 1fr;
+  }
+  .gx-goal-board {
+    grid-template-columns: 1fr;
+  }
+  .gx-goal-card {
+    padding: 20px;
+  }
+  .gx-goal-board > section {
+    margin-bottom: 10px;
+  }
+  .gx-book-card {
+    gap: 18px;
+    padding: 18px;
+  }
+  .gx-book-cover {
+    width: 108px;
+    min-height: 180px;
+    padding: 13px 8px;
+    border-left-width: 5px;
+  }
+  .gx-book-cover > strong {
+    font-size: 18px;
+  }
+  .gx-book-copy h3 {
+    font-size: 20px;
+  }
+  .gx-book-note {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .gx-book-cover > span {
+    letter-spacing: 0;
+  }
+  .gx-memories {
+    grid-template-columns: 1fr;
+  }
+  .gx-skill-list {
+    grid-template-columns: 1fr;
+  }
+  .gx-habit-notes {
+    grid-template-columns: 1fr;
+  }
+  .gx-mood-filter {
+    gap: 6px;
+  }
+  .gx-mood-filter button {
+    padding: 6px 10px;
+  }
+  .gx-radar {
+    padding: 18px;
+  }
+  .gx-toast {
+    font-size: 11px;
+    padding: 12px;
+    white-space: normal;
+  }
+}

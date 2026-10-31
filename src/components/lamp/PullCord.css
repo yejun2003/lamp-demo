@@ -1,0 +1,45 @@
+.pull-cord {
+  position: absolute;
+  left: 59%;
+  top: 51%;
+  width: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  touch-action: none;
+  cursor: grab;
+  z-index: 2;
+  transform: none !important;
+}
+.pull-cord:active {
+  cursor: grabbing;
+}
+.cord-line {
+  height: calc(65px + var(--pull));
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, #aa762d 0 2px, #e1bb72 2px 4px);
+  box-shadow: 1px 0 1px #32271720;
+  transition: height 0.16s ease-out;
+}
+.cord-knob {
+  height: 19px;
+  width: 17px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 25%, #ffe6a6, #c59447 48%, #90602d 95%);
+  box-shadow: 2px 3px 4px #33241020;
+  flex-shrink: 0;
+}
+.pull-cord:hover .cord-knob {
+  box-shadow: 0 0 0 7px #e4c88f45;
+}
+@media (max-width: 760px) {
+  .cord-line {
+    height: calc(38px + var(--pull));
+  }
+  .cord-knob {
+    width: 12px;
+    height: 14px;
+  }
+}

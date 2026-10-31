@@ -1,0 +1,240 @@
+.gx-space-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 224px;
+  padding: 10px 10px 28px;
+  overflow: hidden;
+  border-bottom: 1px solid #263343;
+  margin-bottom: 24px;
+}
+.gx-space-hero:before {
+  content: '';
+  position: absolute;
+  inset: -140px -30px -100px 30%;
+  background: url('/growth/galaxy.png') center/cover;
+  opacity: 0.38;
+  mask-image: linear-gradient(90deg, transparent, #000);
+}
+.gx-space-hero > div:first-child {
+  position: relative;
+  z-index: 1;
+}
+.gx-space-hero h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #f2d3a2;
+  letter-spacing: 3px;
+}
+.gx-space-hero p {
+  font-family: 'Songti SC', serif;
+  font-size: 22px;
+  color: #c4cad6;
+  margin: 12px 0 24px;
+}
+.gx-space-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #a7b3c6;
+  font-size: 12px;
+}
+.gx-space-stats > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gx-space-stats > span + span {
+  border-left: 1px solid #41516a;
+  padding-left: 24px;
+}
+.gx-space-stats strong {
+  color: #efc789;
+  font-size: 20px;
+  font-weight: 400;
+}
+.gx-space-stats svg {
+  color: #efc789;
+}
+.gx-hero-planet {
+  mix-blend-mode: screen;
+  position: absolute;
+  right: 30px;
+  top: -48px;
+  width: 365px;
+  height: 365px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.gx-space-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 22px;
+}
+.gx-space-body {
+  min-width: 0;
+}
+.gx-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.gx-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+  flex: 1;
+  border: 1px solid #3a4d65;
+  border-radius: 9px;
+  padding: 10px 13px;
+  background: #0c1623;
+  color: #b5c0d0;
+}
+.gx-search input {
+  width: 100%;
+  min-width: 0;
+  background: none;
+  border: 0;
+  outline: 0;
+  color: #dbe3ed;
+}
+.gx-search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  display: flex;
+}
+.gx-mood-filter {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.gx-mood-filter button {
+  border: 1px solid #3b485c;
+  background: transparent;
+  border-radius: 20px;
+  font-size: 11px !important;
+  padding: 7px 11px;
+}
+.gx-mood-filter button.active {
+  color: #f3cc8d;
+  background: #efc78918;
+  border-color: #e6be7e;
+}
+.gx-space-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.gx-prompt,
+.gx-calendar,
+.gx-space-note {
+  padding: 22px;
+}
+.gx-prompt h2,
+.gx-calendar h2 {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #2a3748;
+}
+.gx-prompt-star {
+  display: block;
+  font-size: 42px;
+  color: var(--space-color);
+  margin: 16px 0 0;
+  line-height: 1;
+}
+.gx-prompt p {
+  font-family: 'Songti SC', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 12px 0 24px;
+}
+.gx-prompt .gx-button {
+  width: 100%;
+}
+.gx-space-note {
+  color: var(--space-color);
+  padding-top: 28px;
+}
+.gx-space-note h3 {
+  color: #e1e6ec;
+  margin-top: 16px;
+}
+.gx-space-note p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #9dacc0;
+}
+.gx-space-note small {
+  display: block;
+  border-top: 1px solid #293647;
+  padding-top: 18px;
+  color: #b1bdcb;
+  margin-top: 22px;
+}
+.gx-calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+.gx-calendar-nav button {
+  border: 0;
+  background: none;
+  padding: 6px;
+  display: flex;
+}
+.gx-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px 2px;
+  text-align: center;
+}
+.gx-calendar-grid small {
+  color: #91a0b4;
+  font-size: 11px;
+}
+.gx-calendar-grid button {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid transparent;
+  background: none;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 12px !important;
+}
+.gx-calendar-grid button.today {
+  background: #efc789;
+  color: #181d29;
+  box-shadow: 0 0 18px #efc78933;
+}
+.gx-calendar-grid button.selected {
+  border-color: #efc789;
+  background: #675139;
+}
+.gx-calendar-grid button.has-record:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #efc789;
+  border-radius: 50%;
+  left: calc(50% - 2px);
+  bottom: -3px;
+}
+.gx-calendar p {
+  font-size: 11px;
+  border-top: 1px solid #293747;
+  padding-top: 17px;
+  margin-top: 20px;
+}
+.gx-filter-summary {
+  color: #b7c4d5;
+  font-size: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
