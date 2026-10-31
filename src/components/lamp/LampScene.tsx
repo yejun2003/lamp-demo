@@ -27,7 +27,7 @@ export function LampScene({ on, setOn }: { on: boolean; setOn: (value: boolean) 
       <div className="lamp-art">
         <img
           className="scene-photo"
-          src="/lamp-scene.png"
+          src={`${import.meta.env.BASE_URL}lamp-scene.png`}
           alt="奶油色小台灯，圆润的灯罩上带着微笑"
           style={{ filter: on ? lampThemes[mood].filter : 'brightness(.55) saturate(.3)' }}
         />
